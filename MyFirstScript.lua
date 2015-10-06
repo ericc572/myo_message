@@ -4,9 +4,11 @@ scriptTitle = "My First Script"
 scriptDetailsUrl = ""
 
 function onForegroundWindowChange (app, title)
-
-	myo.debug("onForegroundWindowChange: " .. app .. ", " .. title)
-	return true
+    if(app == "com.apple.Messages") {
+		myo.debug("onForegroundWindowChange: " .. app .. ", " .. title)
+		return true;
+	}
+	return false
 
 end 
 
