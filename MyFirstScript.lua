@@ -6,7 +6,7 @@ scriptDetailsUrl = ""
 function onForegroundWindowChange (app, title)
     if(app == "com.apple.Messages") {
 		myo.debug("onForegroundWindowChange: " .. app .. ", " .. title)
-		return true;
+		return true
 	}
 	return false
 
